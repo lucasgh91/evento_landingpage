@@ -1,5 +1,20 @@
+@use 'configs/variaveis';
+@use 'components/infos-bar';
+@use 'components/button';
+@use 'hero';
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: variaveis.$corTextoPrincipal;
+  font-family: 'Rethink Sans', sans-serif;
+  list-style: none;
+}
+
+.container {
+  max-width: 1023px;
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
 }

@@ -1,0 +1,23 @@
+.infos-bar {
+  max-width: 670px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: #fff;
+  text-align: left;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__item {
+      font-size: 14px;
+      b {
+        font-size: 18px;
+        display: block;
+      }
+    }
+  }
+}

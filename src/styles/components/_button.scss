@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 10px;
+  background-color: #ebb54b ;
+  font-size: 18px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #f9ecbc;
+  }
+}

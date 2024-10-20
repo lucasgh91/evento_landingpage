@@ -4,13 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.scss">
   <title>Reveillon 2025</title>
 </head>
 
 <body>
-  
-  <script src="./scripts/main.js"></script>
+  <header class="hero">
+    <div class="container">
+      <div class="hero__details">
+        <img class="hero__details__logo" src="images/logo.png">
+        <p class="hero__details__text">
+          Faltam <span id="timeToEvent"></span> para minha festa de aniversário! <img
+            src="./images/festa.png" alt="">
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__list">
+            <li class="infos-bar__list__item">
+              <b>Localização:</b>
+              Av. Javascript, nº 356 - HTML - Brasil
+            </li>
+            <li class="infos-bar__list__item">
+              <b>Quando:</b>
+              27/06/2025 às 20hrs
+            </li>
+          </ul>
+          <a href="#" class="button">
+            Confirmar presença
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
