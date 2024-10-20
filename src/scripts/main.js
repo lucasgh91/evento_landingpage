@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
 
+  // CONTADOR TEMPO
+
   const dataEvento = new Date('Jun 27, 2025 00:00:00')
 
   const atualizaAsHoras = this.setInterval(function() {
@@ -27,5 +29,26 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
   }, 1000)
+
+  // MODAL
+
+  const modal = document.getElementById('modal')
+  const modalContent = document.querySelector('.modal__content')
+  const itens = document.querySelectorAll('.ambientes__grid__list__item')
+
+  for (let i = 0; i < itens.length; i++) {
+    itens[i].addEventListener('click', function(e) {
+
+      modalContent.firstElementChild.src = e.target.src
+
+      modal.style.display = 'flex';
+    })
+  }
+
+  window.addEventListener('click', function(e) {
+    if(e.target == modal) {
+      modal.style.display = 'none';
+    }
+  })
 
 })

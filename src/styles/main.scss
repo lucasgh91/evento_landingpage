@@ -1,8 +1,10 @@
 @use 'configs/variaveis';
 @use 'components/infos-bar';
 @use 'components/button';
+@use 'components/modal';
 @use 'hero';
 @use 'infos';
+@use 'ambientes';
 
 * {
   box-sizing: border-box;
@@ -24,9 +26,12 @@ body {
   width: 100%;
   padding: 50px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
   color: #a47f34;
   font-size: 32px;
+  margin-bottom: 20px;
 }

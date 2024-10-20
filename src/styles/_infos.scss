@@ -1,18 +1,10 @@
 .infos {
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__text {
-    margin: 30px;
-
-    h2 {
-      margin-bottom: 20px;
-    }
 
     ul {
+      margin-right: 20px;
+
       li {
         line-height: 150%;
         list-style: disc;
