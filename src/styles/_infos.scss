@@ -1,0 +1,32 @@
+.infos {
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin: 30px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li {
+        line-height: 150%;
+        list-style: disc;
+
+        &::marker {
+          color: #a47f34;
+        }
+      }
+    }
+  }
+
+  &__img {
+    height: 300px;
+    border: 5px solid #fff;
+    box-shadow: 10px -10px 50px -15px #000;
+  }
+}
