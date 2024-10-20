@@ -5,6 +5,8 @@
 @use 'hero';
 @use 'infos';
 @use 'ambientes';
+@use 'line-up';
+@use 'footer';
 
 * {
   box-sizing: border-box;
@@ -16,15 +18,13 @@
 }
 
 body {
-  background: rgb(199,180,150);
   background: linear-gradient(0deg, rgba(199,180,150,1) 0%, rgb(255, 255, 255) 100%);  
-  height: 3000px;
 }
 
 .container {
   max-width: 1023px;
   width: 100%;
-  padding: 50px;
+  padding: 100px 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -32,6 +32,6 @@ body {
 
 .title {
   color: #a47f34;
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 50px;
 }

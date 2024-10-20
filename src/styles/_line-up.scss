@@ -1,0 +1,32 @@
+.lineup {
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .title {
+    text-align: center;
+  }
+
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    &__item {
+      text-align: center;
+      font-weight: bold;
+      width: 200px;
+
+      img {
+        border-radius: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.602);
+      }
+    }
+  }
+
+}
