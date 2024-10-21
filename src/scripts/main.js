@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-  // CONTADOR TEMPO
+  // CONTADOR
 
   const dataEvento = new Date('Jun 27, 2025 00:00:00')
 
@@ -21,9 +21,9 @@ window.addEventListener('DOMContentLoaded', function() {
     const minutos = Math.floor((diferencaDasHoras % tempoEmMs.horas) / tempoEmMs.minutos)
     const segundos = Math.floor((diferencaDasHoras % tempoEmMs.minutos) / tempoEmMs.segundos)
 
-    if (dias < 0) {
+    if (diferencaDasHoras < 0) {
       clearInterval(atualizaAsHoras)
-      document.getElementById('timeToEvent').parentNode.innerHTML = `O evento foi finalizado há <span id="timeToEvent">${Math.abs(dias)}</span> dias.`
+      document.getElementById('timeToEvent').parentNode.innerHTML = `O evento foi finalizado em <span id="timeToEvent">${dataEvento.toLocaleString().split(',')[0]} às ${('0' + dataEvento.getHours()).slice(-2)}:${('0' + dataEvento.getMinutes()).slice(-2)}</span>`
     } else {
       document.getElementById('timeToEvent').innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`
     }

@@ -1,3 +1,4 @@
+@use 'configs/responsive';
 @use 'configs/variaveis';
 
 .hero {
@@ -8,6 +9,7 @@
   position: relative;
 
   .container {
+    display: block;
     padding-top: 0px;
 
     &::before {
@@ -42,7 +44,6 @@
 
       #timeToEvent {
         color: #c49841;
-        text-shadow: #323232 1px 1px 0;
       }
 
       img {

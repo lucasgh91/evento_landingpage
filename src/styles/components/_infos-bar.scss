@@ -1,3 +1,5 @@
+@use '../configs/responsive';
+
 .infos-bar {
   max-width: 670px;
   margin: 0 auto;
@@ -7,6 +9,10 @@
   background-color: #fff;
   text-align: left;
 
+  .button {
+    margin-left: 20px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -14,10 +20,27 @@
 
     &__item {
       font-size: 14px;
+
       b {
         font-size: 18px;
         display: block;
       }
+    }
+  }
+
+  @include responsive.media(mobile) {
+
+    flex-direction: column;
+    
+    &__list {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .button {
+      margin-left: 0;
+      margin-top: 20px;
+      justify-content: center;
     }
   }
 }

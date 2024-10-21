@@ -1,3 +1,5 @@
+@use 'configs/responsive';
+
 .infos {
 
   &__text {
@@ -8,6 +10,7 @@
       li {
         line-height: 150%;
         list-style: disc;
+        list-style-position: inside;
 
         &::marker {
           color: #a47f34;
@@ -20,5 +23,33 @@
     height: 300px;
     border: 5px solid #fff;
     box-shadow: 10px -10px 50px -15px #000;
+  }
+
+  @include responsive.media(mobile) {
+
+    &__text {
+
+      ul {
+
+        margin: 0;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+
+  @include responsive.media(tablet) {
+    &__img {
+      display: none;
+    }
+  }
+
+  @include responsive.media(desktop) {
+    &__img {
+      margin-top: 50px;
+      height: 200px;
+    }
   }
 }
